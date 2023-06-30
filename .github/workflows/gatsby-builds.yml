@@ -7,6 +7,6 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Build Gatsby Site
-      uses: jzweifel/gatsby-cli-github-action@master
+      uses: enriikke/gatsby-gh-pages-action@v2
       with:
         gatsby-arg: build

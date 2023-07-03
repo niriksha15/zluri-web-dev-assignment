@@ -26,4 +26,5 @@ module.exports = {
       },
     },
   ],
+    pathPrefix: "/web-development-assignment",
 };

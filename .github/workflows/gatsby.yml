@@ -59,12 +59,13 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
+        env:
+           token: ${{ secrets.GH_TOKEN }}
         with:
           # Automatically inject pathPrefix in your Gatsby configuration file.
           #
           # You may remove this line if you want to manage the configuration yourself.
            static_site_generator: gatsby
-           token: ${{ secrets.GH_TOKEN }}
            enablement: true
       - name: Restore cache
         uses: actions/cache@v3

@@ -1,7 +1,7 @@
 name: Gatsby Deploy
 
 on:
-  push:
+  pull_request:
     branches: main
 
 env:

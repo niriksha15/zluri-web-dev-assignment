@@ -1,6 +1,6 @@
 
 <a href="https://www.zluri.com/" target="_blank">
-<img src="http://cdn.mcauto-images-production.sendgrid.net/ae71217ff9ae4a07/535a0e46-afb0-44b7-80a0-cd50675c6789/1191x678.png" alt="Zluri" />
+<img src="https://drive.google.com/file/d/1t-QAEVjKbp6KU4j-4L4tc8b4mOze4jF2/view?usp=sharing" alt="Zluri" />
 </a>
 
 # Web development assignment for Zluri

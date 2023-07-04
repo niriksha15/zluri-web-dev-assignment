@@ -29,6 +29,11 @@ In a new file:
    ```sh
    gatsby new web-development-assignment https://github.com/harshavardhan-zluri/web-development-assignment
    ```
+in widows, if it shows a execution policy error, use the following code:
+
+   ```sh
+   Set-ExecutionPolicy Unrestricted -Scope Process
+   ```
 
 3. Once installed, you can begin developing your site.
 
@@ -36,11 +41,6 @@ In a new file:
    cd web-development-assignment
    npm i --legacy-peer-deps
    gatsby develop
-   ```
-in widows, if it shows a execution policy error, use the following code:
-
-   ```sh
-   Set-ExecutionPolicy Unrestricted -Scope Process
    ```
 
 or you can use this instead of gatsby develop:

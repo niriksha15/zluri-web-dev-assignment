@@ -39,7 +39,7 @@ In a new file:
 in widows, if it shows a execution policy error, use the following code:
 
    ```sh
-   Set-ExecutionPolicy Unrestricted _scope Process
+   Set-ExecutionPolicy Unrestricted -Scope Process
    ```
 
 or you can use this instead of gatsby develop:

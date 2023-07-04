@@ -1,22 +1,18 @@
-<img src="screenshot.png" alt="Gatsby Theme Portfolio Minimal Screenshot" width="700" />
 
-<a href="https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme" target="_blank">
-<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud" />
+<a href="https://www.zluri.com/" target="_blank">
+<img src="https://luna1.co/b33bc3.png" alt="Zluri" />
 </a>
 
 # Web development assignment for Zluri
 
-#### A Gatsby Starter Project to easily get started with the Portfolio Minimal Theme.
+Just clone this Gatsby Site, get started!
 
-Portfolio Minimal is a Gatsby Theme that let's you create outstanding one-page portfolios within minutes. This Gatsby Starter is a boilerplate project that has the theme pre-installed and pre-configured.
-
-Just clone this Gatsby Starter, add the content. And that's it!
-
-[Live Demo on Gatsby Cloud](https://gatsbystarterportfoliominimalt.gatsbyjs.io/) · [Live Demo on Netlify](https://gatsby-starter-portfolio-minimal-theme.netlify.app/) · [Portfolio Minimal Theme on Github](https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal)
-
----
 
 ## Installation
+
+Install the latest version of NodeJs: <a href="https://nodejs.org/en" target="_blank">Download here</a>
+
+Install VS Code and open the terminal in a new folder
 
 1. Install the Gatsby CLI
 
@@ -24,31 +20,78 @@ Just clone this Gatsby Starter, add the content. And that's it!
    npm install -g gatsby-cli
    ```
 
-2. Create a new Gatsby site with the Portfolio Minimal Starter.
+2. Create a new Gatsby site with the repo.
+
+In a new file: 
 
    ```sh
-   gatsby new portfolio-minimal https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme
+   gatsby new web-development-assignment https://github.com/harshavardhan-zluri/web-development-assignment
    ```
 
 3. Once installed, you can begin developing your site.
 
    ```sh
-   cd portfolio-minimal
+   cd web-development-assignment
    gatsby develop
    ```
+in widows, if it shows a execution policy error, use the following code:
 
-4. By default, the Portfolio Minimal Starter has a `content` directory at the root of your Gatsby site. There, you can edit the theme settings as well as add content for your sections. To learn more about it, have a look at the [Readme of Portfolio Minimal](https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal/tree/main/gatsby-theme-portfolio-minimal#readme).
+   ```sh
+   Set-ExecutionPolicy Unrestricted _scope Process
+   ```
 
----
+or you can use this instead of gatsby develop:
 
-## Issues?
+   ```sh
+   npm run develop
+   ```
 
-If you find any bugs or have feature suggestions, create a new issue or pull request 🙏
+4. Once this is successful, you can access the live site at <a href="http://localhost:8000/"> http://localhost:8000/ </a>
 
-Thanks a lot for using this starter! 💪
+5. Start the assignment and follow the instructions as on the homepage.
 
----
 
-<a href="https://www.buymeacoffee.com/kmuenster" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+## Hosting Site on Gatsby cloud
 
-Konstantin Münster – [konstantin.digital](https://konstantin.digital)
+1. Open github with your account and create a repo called zluri-web-dev-assignment
+
+2. In VS Code initiate Git
+
+   ```sh
+   git init
+   git remote add origin https://github.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_REPO_NAME.git
+   git branch -M main
+   git add .
+   git commit -m "first commit"
+   git push -u origin main
+   ```
+
+   Your local repository should be snced with your github repo.
+   Now you can make changes to the local site and push it to your remote Github repo.
+   
+3. Open Gatsby Cloud <a href="https://www.gatsbyjs.com/dashboard/" > Click here </a>
+
+   Create a new account
+   <img src="https://www.gatsbyjs.com/static/9c130998b561f1770834309715c99d5b/321ea/01-create-a-site-button.png" alt="gatsby cloud" />
+
+
+4. Click on add a site and connect your github repository
+
+   It'll ask to add gatsby clloud to your github account, Click install.
+   Then import the repository.
+
+5. Once you import it'll take you to the configure screen
+
+   <img src="https://www.gatsbyjs.com/static/61bb418dbf509217b076a19507374eef/321ea/05-add-site-details.png" alt="configure" />
+   
+6. Scroll to the bottom and click on build site
+
+   You'll be able to see your site building:
+   <img src="https://www.gatsbyjs.com/static/d82ecf06f74d4195697a9a4c9253049d/321ea/07-site-page.png" alt="build" />
+
+   Once done, you'll be able to open the link of your site hosted on gatsby cloud.
+
+## Submission
+
+Submit this site link along with any thoughts or comments you would like to add.
+   

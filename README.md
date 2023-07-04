@@ -34,6 +34,7 @@ In a new file:
 
    ```sh
    cd web-development-assignment
+   npm i --legacy-peer-deps
    gatsby develop
    ```
 in widows, if it shows a execution policy error, use the following code:

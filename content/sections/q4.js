@@ -15,8 +15,8 @@ const Q3 = () => {
                 </Title>
                 <QuestionsGrid>
                     <AnswerDiv>
-                        <FigmaButton>Figma</FigmaButton>
-                        <PrototypeButton>Prototype</PrototypeButton>
+                    <a href="https://www.figma.com/file/kPxYk2EWTMsBmx4lAc92ni/Web-Dev-Assignment?type=design&node-id=16-26&mode=design&t=LMCvfVQBL3S5dApY-0" target="_blank" ><FigmaButton>Figma</FigmaButton></a>
+                        <a href="https://www.figma.com/proto/kPxYk2EWTMsBmx4lAc92ni/Web-Dev-Assignment?type=design&node-id=36-559&t=YPqmYSs8rLq2ahId-1&scaling=min-zoom&page-id=30%3A35&starting-point-node-id=36%3A230" target="_blank" ><PrototypeButton>Prototype</PrototypeButton></a>
                     </AnswerDiv>
                 </QuestionsGrid>
             </StyledContainer>

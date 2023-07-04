@@ -1,7 +1,7 @@
 
 
 # Web development assignment for Zluri
-
+Here is the Site you'll work on for this assignment: <a href="https://webdevelopmentassignmentmain.gatsbyjs.io/" target="_blank">https://webdevelopmentassignmentmain.gatsbyjs.io/</a>
 1. For the assignment you are required to take this gatsby site and make neccessary changes.
 2. Follow the installation instructions below and clone the github repo on your system.
 3. The questions for the assignment are on the homepage of the site itself. You can view them once the local site is up and running.
@@ -39,7 +39,7 @@ In a new file:
 in widows, if it shows a execution policy error, use the following code:
 
    ```sh
-   Set-ExecutionPolicy Unrestricted _scope Process
+   Set-ExecutionPolicy Unrestricted -Scope Process
    ```
 
 or you can use this instead of gatsby develop:
@@ -48,7 +48,7 @@ or you can use this instead of gatsby develop:
    npm run develop
    ```
 
-4. Once this is successful, you can access the live site at <a href="http://localhost:8000/"> http://localhost:8000/ </a>
+4. Once this is successful, you can access the live site at <a href="http://localhost:8000/" target="_blank"> http://localhost:8000/ </a>
 
 5. Start the assignment and follow the instructions as on the homepage.
 
@@ -71,7 +71,7 @@ or you can use this instead of gatsby develop:
    Your local repository should be snced with your github repo.
    Now you can make changes to the local site and push it to your remote Github repo.
    
-3. Open Gatsby Cloud <a href="https://www.gatsbyjs.com/dashboard/" > Click here </a>
+3. Open Gatsby Cloud <a href="https://www.gatsbyjs.com/dashboard/" target="_blank" > Click here </a>
 
    Create a new account
    <img src="https://www.gatsbyjs.com/static/9c130998b561f1770834309715c99d5b/321ea/01-create-a-site-button.png" alt="gatsby cloud" />

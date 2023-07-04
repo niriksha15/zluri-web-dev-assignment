@@ -1,60 +1,52 @@
 import React from "react";
 import styled from 'styled-components';
 import { Container, Wrapper } from "./style";
-import flex from "../images/flex-trial.png"
 
-const Q2 = () => {
+const QuestionsHeading = () => {
     return (
         <StyledWrapper>
             <StyledContainer >
                 <Title>
                     <h3>
-                        Create the following component from the image with html, css. and put it on the right side.
+                        Lets Begin
                     </h3>
+                    <p>
+                        Hi! We appreciate your interest in joining our web development team. Thank you for applying. Please follow the instructions below to complete the assignment. Scroll down for further instructions.
+                    </p>
                 </Title>
-                <QuestionsGrid>
-                    <ImageDiv>
-                        <img src={flex} alt="flex" />
-                    </ImageDiv>
-                    <CodeDiv>
-                        <h4>Have the created component here</h4>
-                        {/* <img src={your code} alt="code" /> */}
-                    </CodeDiv>
-                </QuestionsGrid>
             </StyledContainer>
         </StyledWrapper>
     )
 }
 
-export default Q2
+export default QuestionsHeading
 
-const StyledWrapper=styled(Wrapper)`
-background:#FFFFFF;
+const StyledWrapper = styled(Wrapper)`
+background:#F6F7F9;
 `
 const Title = styled.div`
+text-align:center;
+max-width:900px;
+margin:auto;
 margin-bottom:40px;
 h3{
-    font-size:32px;
-    color:#000000;
+    text-align: center;
+font-size: 32px;
+font-family: Lexend Medium;
+font-style: normal;
+font-weight: 500;
+line-height: 40px;
+letter-spacing: -0.4px;
 }
-`
-const QuestionsGrid = styled.div`
-display:grid;
-grid-template-columns: 1fr 1fr;
-grid-gap:20px;
+p{
+    text-align: center;
+font-size: 18px;
+font-family: Lexend Regular;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+}
 `
 const StyledContainer = styled(Container)`
 margin-top:0;
-`
-const ImageDiv = styled.div`
-img{
-    width:300px;
-}
-border-right: 1px solid #000000;
-`
-const CodeDiv = styled.div`
-h4{
-    font-size:16px;
-    color:#000000;
-}
 `

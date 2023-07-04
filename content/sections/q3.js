@@ -1,7 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
 import { Container, Wrapper } from "./style";
-import dropdown from "../images/dropdown-trial.png"
 
 const Q3 = () => {
     return (
@@ -9,17 +8,15 @@ const Q3 = () => {
             <StyledContainer >
                 <Title>
                     <h3>
-                        Create the following dropdown from the image and put it on the left side.
+                        <span>Task 3:</span> Build a dropdown
                     </h3>
+                    <p>Your objective is to replicate the design and functionality of the given Figma design. Pay attention to details such as colors, fonts, and spacing to achieve a faithful representation of the design.</p>
                 </Title>
                 <QuestionsGrid>
                     <AnswerDiv>
-                        <h4>Have the created component here</h4>
-                        {/* <img src={your code} alt="code" /> */}
+                        <FigmaButton>Figma</FigmaButton>
+                        <PrototypeButton>Prototype</PrototypeButton>
                     </AnswerDiv>
-                    <ImageDiv>
-                        <img src={dropdown} alt="dropdown" />
-                    </ImageDiv>
                 </QuestionsGrid>
             </StyledContainer>
         </StyledWrapper>
@@ -31,27 +28,76 @@ export default Q3
 const StyledWrapper=styled(Wrapper)`
 `
 const Title = styled.div`
-margin-bottom:40px;
 h3{
-    font-size:32px;
+    font-size: 32px;
+font-family: Lexend Medium;
+font-style: normal;
+font-weight: 500;
+line-height: 40px;
+letter-spacing: -0.4px;
+    span{
+        background:#FAE090;
+    }
+}
+p{
+    font-size: 18px;
+font-family: Lexend Regular;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
 }
 `
 const QuestionsGrid = styled.div`
-display:grid;
-grid-template-columns: 1fr 1fr;
-grid-gap:20px;
+
 `
 const StyledContainer = styled(Container)`
 margin-top:0;
 `
-const ImageDiv = styled.div`
-img{
-    width:300px;
+const AnswerDiv = styled.div`
+align-self:center;
+display: flex;
+flex-direction:row;
+button{
+    margin:0 10px;
 }
 `
-const AnswerDiv = styled.div`
-h4{
-    font-size:16px;
-}
-border-right: 1px solid #FFFFFF;
+const FigmaButton = styled.button`
+border-radius: 40px;
+border: 1px solid #2684FE;
+background: #2684FE;
+min-width:150px;
+height: 54px;
+padding: 6px 14px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+color: #FFF;
+text-align: center;
+font-size: 16px;
+font-family: Lexend Bold;
+font-style: normal;
+font-weight: 700;
+line-height: 160%;
+cursor:pointer;
+`
+const PrototypeButton = styled.button`
+border-radius: 40px;
+border: 1px solid #2684FE;
+background: #FFFFFF;
+min-width:150px;
+height: 54px;
+padding: 6px 14px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+color: #2684FE;
+text-align: center;
+font-size: 16px;
+font-family: Lexend Bold;
+font-style: normal;
+font-weight: 700;
+line-height: 160%;
+cursor:pointer;
 `

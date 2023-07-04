@@ -8,16 +8,17 @@ const Question = () => {
             <StyledContainer >
                 <Title>
                     <h3>
-                        Lets Begin
+                        <span>Task 1:</span> Personalize the Website
                     </h3>
                 </Title>
-                <QuestionsDiv>
-                    <ul>
-                        <li>Find the title "WD Internship" and replace it with your first name</li>
-                        <li>Attach your resume and add it to the resume button in the nav bar.(or) Create a button similar to the style of button above, put it under this question and attach the resume to it.</li>
-                        <li>Make the changes in the components below as mentioned</li>
-                    </ul>
-                </QuestionsDiv>
+                <List>
+                    <ol type="1">
+                        <li>Change the name of the website to your own name.</li>
+                        <li>Attach your resume to the 'Resume' button on the navigation.</li>
+                        <li>Link your email address to the 'Email' button on the navigation.</li>
+                        <li>Link your phone number to the 'Contact me' button.</li>
+                    </ol>
+                </List>
             </StyledContainer>
         </StyledWrapper>
     )
@@ -25,23 +26,36 @@ const Question = () => {
 
 export default Question
 
-const StyledWrapper=styled(Wrapper)`
+const StyledWrapper = styled(Wrapper)`
 background:#FFFFFF;
 `
 const Title = styled.div`
 h3{
-    font-size:32px;
-    color:#000000;
+    font-size: 32px;
+font-family: Lexend Medium;
+font-style: normal;
+font-weight: 500;
+line-height: 40px;
+letter-spacing: -0.4px;
+    span{
+        background:#FAE090;
+    }
+}
+p{
+    font-size: 18px;
+font-family: Lexend Regular;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
 }
 `
-const QuestionsDiv = styled.div`
-ul{
-    display:flex;
-    flex-direction:column;
-}
+const List = styled.div`
 li{
-    font-size:20px;
-    color:#000000;
+    font-size: 18px;
+font-family: Lexend Regular;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
 }
 `
 const StyledContainer = styled(Container)`

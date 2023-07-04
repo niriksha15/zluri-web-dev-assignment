@@ -1,78 +1,109 @@
 import React from "react";
 import styled from 'styled-components';
 import { Container, Wrapper } from "./style";
-import flex from "../images/flex-trial.png"
+import dropdown from "../images/dropdown-trial.png"
 
-const Q4 = () => {
+const Q3 = () => {
     return (
         <StyledWrapper>
             <StyledContainer >
                 <Title>
                     <h3>
-                        Paste the above created dropdown here on the left and add an image on the right. <br />
-                        Write a code such that selecting an option in the dropdown changes the image.
+                        <span>Task 4:</span> Build a component
                     </h3>
-                    <p>You can use upto 3 options here. Images can be used from the images folder, or you can add your own.</p>
+                    <p>In this section, you are required to build a new component based on a Figma design and prototype. The component's function should be to change the image displayed based on the item selected in the dropdown. Implement this functionality using HTML, CSS, and JavaScript.</p>
                 </Title>
                 <QuestionsGrid>
-                    <ImageDiv>
-                        <h4>
-                            Doropdown here
-                        </h4>
-                    </ImageDiv>
-                    <CodeDiv>
-                        <h4>Have the Image here</h4>
-                        {/* <img src={your image} alt="image" /> */}
-                    </CodeDiv>
+                    <AnswerDiv>
+                        <FigmaButton>Figma</FigmaButton>
+                        <PrototypeButton>Prototype</PrototypeButton>
+                    </AnswerDiv>
                 </QuestionsGrid>
             </StyledContainer>
         </StyledWrapper>
     )
 }
 
-export default Q4
+export default Q3
 
-const StyledWrapper = styled(Wrapper)`
-background:#FFFFFF;
+const StyledWrapper=styled(Wrapper)`
+background:#F6F7F9;
 `
 const Title = styled.div`
-margin-bottom:40px;
 h3{
-    font-size:32px;
-    color:#000000;
+    font-size: 32px;
+font-family: Lexend Medium;
+font-style: normal;
+font-weight: 500;
+line-height: 40px;
+letter-spacing: -0.4px;
+    span{
+        background:#FAE090;
+    }
 }
 p{
-    font-size:16px;
-    color:#000000;
+    font-size: 18px;
+font-family: Lexend Regular;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
 }
 `
 const QuestionsGrid = styled.div`
-padding: 30px 0;
-display:grid;
-grid-template-columns: 1fr 1fr;
-grid-gap:20px;
 `
 const StyledContainer = styled(Container)`
 margin-top:0;
 `
 const ImageDiv = styled.div`
-h4{
-    font-size:16px;
-    color:#000000;
-    margin: 1rem 0 1rem;
-}
 img{
     width:300px;
 }
-border-right: 1px solid #000000;
 `
-const CodeDiv = styled.div`
-h4{
-    font-size:16px;
-    color:#000000;
-    margin: 1rem 0 1rem;
+const AnswerDiv = styled.div`
+align-self:center;
+display: flex;
+flex-direction:row;
+button{
+    margin:0 10px;
 }
-img{
-    width:300px;
-}
+`
+const FigmaButton = styled.button`
+border-radius: 40px;
+border: 1px solid #2684FE;
+background: #2684FE;
+min-width:150px;
+height: 54px;
+padding: 6px 14px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+color: #FFF;
+text-align: center;
+font-size: 16px;
+font-family: Lexend Bold;
+font-style: normal;
+font-weight: 700;
+line-height: 160%;
+cursor:pointer;
+`
+const PrototypeButton = styled.button`
+border-radius: 40px;
+border: 1px solid #2684FE;
+background: #FFFFFF;
+min-width:150px;
+height: 54px;
+padding: 6px 14px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+color: #2684FE;
+text-align: center;
+font-size: 16px;
+font-family: Lexend Bold;
+font-style: normal;
+font-weight: 700;
+line-height: 160%;
+cursor:pointer;
 `

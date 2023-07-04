@@ -1,7 +1,4 @@
 
-<a href="https://www.zluri.com/" target="_blank">
-<img src="https://drive.google.com/file/d/1t-QAEVjKbp6KU4j-4L4tc8b4mOze4jF2/view?usp=sharing" alt="Zluri" />
-</a>
 
 # Web development assignment for Zluri
 

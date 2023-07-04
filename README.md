@@ -1,11 +1,16 @@
 
 <a href="https://www.zluri.com/" target="_blank">
-<img src="https://luna1.co/b33bc3.png" alt="Zluri" />
+<img src="http://cdn.mcauto-images-production.sendgrid.net/ae71217ff9ae4a07/535a0e46-afb0-44b7-80a0-cd50675c6789/1191x678.png" alt="Zluri" />
 </a>
 
 # Web development assignment for Zluri
 
-Just clone this Gatsby Site, get started!
+1. For the assignment you are required to take this gatsby site and make neccessary changes.
+2. Follow the installation instructions below and clone the github repo on your system.
+3. The questions for the assignment are on the homepage of the site itself. You can view them once the local site is up and running.
+4. Follow the instructions on the homepage and solve the questions as required.
+5. Once the solutions are done follow the hosting instructions to host the site on gatsby cloud.
+6. Once done, share the link with us.
 
 
 ## Installation

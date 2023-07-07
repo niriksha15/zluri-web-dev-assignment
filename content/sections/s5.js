@@ -2,6 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import { Container } from "./style";
 
+
 const S5 = () => {
     return (
         <Container >
@@ -10,6 +11,7 @@ const S5 = () => {
                     Solution Here
                 </h4>
                 <p>Put the created component below this.</p>
+                
             </Title>
             
         </Container>

@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { Menu, X } from "react-feather"
 import styled from "styled-components"
 import { Container } from "./style"
+import Resume from "../../static/niriksharesume.pdf";
 
 
 
@@ -13,40 +14,40 @@ export default class Navigation extends Component {
     }
 
     componentDidMount() {
-        window.addEventListener("scroll", this.handleScroll, { passive: true })
+        window.addEventListener("scroll", this.handleScroll, { passive: true });
     }
 
     handleScroll = (event) => {
-        const scrollTop = window.pageYOffset
+        const scrollTop = window.pageYOffset;
 
         if (scrollTop > 32) {
             this.setState({ hasScrolled: true })
         } else {
             this.setState({ hasScrolled: false })
         }
-    }
+    };
 
     toggleMobileMenu = () => {
         this.setState((prevState) => ({
             mobileMenuOpen: !prevState.mobileMenuOpen,
-        }))
-    }
+        }));
+    };
 
     closeMobileMenu = () => {
         if (this.state.mobileMenuOpen) {
             this.setState({ mobileMenuOpen: false })
         }
-    }
+    };
 
     render() {
-        const { mobileMenuOpen } = this.state
+        const { mobileMenuOpen } = this.state;
 
         return (
             <Nav {...this.props} scrolled={this.state.hasScrolled}>
                 <StyledContainer>
                     <Brand>
                         <Link to="/" onClick={this.closeMobileMenu}>
-                            <h2>ZLURI</h2>
+                            <h2>NIRIKSHA N </h2>
                         </Link>
                     </Brand>
                     <Mobile>
@@ -66,15 +67,23 @@ export default class Navigation extends Component {
                         <NavListWrapper>
                             <ul>
                                 <NavItem>
-                                    <a href="">Email</a>
+                                    <a href="mailto:niriksha.narasimha@gmail.com">Email</a>
                                 </NavItem>
                                 <NavItem>
-                                    <a href="">Contact me</a>
+                                    <a href="tel:+919731534081">Contact me</a>
                                 </NavItem>
                                 <ActionsContainer>
-                                    <a href="https://get.zluri.com/request-demo">
+                                  { /* <a href="https://get.zluri.com/request-demo">
                                         <button>Resume</button>
-                                    </a>
+                            </a> */}
+                            <a 
+                            target="_blank"
+                            
+                            href={Resume}
+                            >
+                              <button>Resume</button>
+                            </a>
+            
                                 </ActionsContainer>
                             </ul>
                         </NavListWrapper>
@@ -86,15 +95,19 @@ export default class Navigation extends Component {
                             <NavListWrapperMobile mobile={true}>
                                 <ul>
                                     <NavItemMobile>
-                                        <a href="">Email</a>
+                                        <a href="mailto:niriksha.narasimha@gmail.com">Email</a>
                                     </NavItemMobile>
                                     <NavItemMobile>
-                                        <a href="">Contact me</a>
+                                        <a href="tel:+919731534081">Contact me</a>
                                     </NavItemMobile>
                                     <ActionsContainer>
-                                        <a href="https://get.zluri.com/request-demo">
-                                            <button>Resume</button>
+                                        <a target="_blank"
+                                        
+                                        href={Resume}
+                                        >
+                                          <button>Resume</button>
                                         </a>
+                                            
                                     </ActionsContainer>
                                 </ul>
                             </NavListWrapperMobile>
@@ -102,21 +115,21 @@ export default class Navigation extends Component {
                     )}
                 </Mobile>
             </Nav>
-        )
+        );
     }
 }
 const StyledContainer = styled(Container)`
 display:flex;
 flex-direction:row;
 justify-content:space-between;
-`
+`;
 const Nav = styled.nav`
   padding: ${props => (props.scrolled ? `16px 0 12px` : `24px 0 20px`)};
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
-  background: ${props => (props.scrolled ? `black` : null)};
+  background: ${(props) => (props.scrolled ? `black` : null)};
   transition: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
   @media (max-width: 991px) {
     padding: ${(props) => (props.scrolled ? `16px 0 15px` : `24px 0 15px`)};
@@ -125,7 +138,7 @@ const Nav = styled.nav`
     background: #000000;
     transition:0.3s ease-in-out 0s;
   }
-`
+`;
 
 const NavListWrapper = styled.div`
   display: flex;
@@ -141,8 +154,8 @@ const NavListWrapper = styled.div`
     padding:0;
     column-gap:5px;
     li {
-border-radius: 23.5px;
-transition: 0.3s ease-in-out 0s;
+      border-radius: 23.5px;
+      transition: 0.3s ease-in-out 0s;
       &:hover {
         text-decoration: underline !important;
       }
@@ -160,7 +173,7 @@ transition: 0.3s ease-in-out 0s;
         }
       `};
   }
-`
+`;
 const NavListWrapperMobile = styled.div`
   display: flex;
   column-gap: 45px;
@@ -186,7 +199,7 @@ const NavListWrapperMobile = styled.div`
         }
       `};
   }
-`
+`;
 
 const NavItem = styled.li`
 font-family: 'Lexend Medium';
@@ -217,7 +230,7 @@ border-radius: 23.5px;
   span {
     margin: 0 0 1px 6px;
   }
-`
+`;
 const NavItemMobile = styled.li`
   margin: 0 0.75em;
   padding: 15px 0;
@@ -248,10 +261,10 @@ const NavItemMobile = styled.li`
   @media (max-width: 767px) {
     width:460px;
   }
-  @media (max-width: ${props => props.theme.screen.xs}) {
+  @media (max-width: ${(props) => props.theme.screen.xs}) {
     width:300px;
   }
-`
+`;
 
 const MobileMenu = styled.div`
   width: 100%;
@@ -264,7 +277,7 @@ const MobileMenu = styled.div`
   height: 600px;
   width: 100%;
   overflow-y: scroll;
-`
+`;
 const MultiBrand = styled.div`
 text-decoration: none;
 letter-spacing: 1px;
@@ -284,7 +297,7 @@ span{
     display: block;
   }
 }
-`
+`;
 const Brand = styled.div`
 h2{
   font-family: Lexend Bold;
@@ -309,7 +322,7 @@ h2{
       text-decoration: none;
     }
   }
-`
+`;
 
 const ActionsContainer = styled.div`
 padding: 5px 0 5px 12px;
@@ -332,7 +345,7 @@ cursor:pointer;
     -moz-transition: ease-out 0.4s;
     transition: ease-out 0.4s;
   }
-`
+`;
 const Mobile = styled.div`
   display: none;
   align-self: center;
@@ -350,4 +363,4 @@ const Mobile = styled.div`
       display: none;
     }
   `}
-`
+`;

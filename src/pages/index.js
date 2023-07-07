@@ -13,10 +13,11 @@ import Navigation from "../../content/sections/navigation";
 import Header from "../../content/sections/header";
 import Layout from "../../content/sections/layout";
 
+
 export default function IndexPage() {
   return (
     <Layout>
-      <Seo title="Web development assignment for Zluri" />
+      <Seo title="Niriksha N-Web development assignment for Zluri" />
       <Navigation />
       <div>
         <Header />
